@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avto Moto. Автомобили">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Avto Moto</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <svg class="header__logo-img" width="134" height="55">
+            <use xlink:href="img/sprite_auto.svg#icon-logo" width="134" height="55"></use>
+          </svg>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Автомобили</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вакансии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Корпоративным клиентам</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Клиентам</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Аренда авто</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Каршеринг</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Как продать авто</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Traid in</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Test draiv</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <section class="modal modal--closed">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
+        <h2 class="modal__heading">Оставить отзыв</h2>
+        <form method="post">
+          <ul class="list">
+            <li>
+              <label>
+                <input type="text" name="name" minlength="2" placeholder="Имя" required="">
+              </label>
+              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
+            </li>
+            <li>
+              <label>
+                <input type="text" name="advantages" placeholder="Достоинства" required="">
+              </label>
+              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
+            </li>
+            <li>
+              <label>
+                <input type="text" name="disadvantages" placeholder="Недостатки" required="">
+              </label>
+              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
+            </li>
+            <li>
+              <span>Оцените товар</span>
+              <ul class="modal__stars">
+                <li class="modal__stars-item" tabindex="0">
+                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-1">
+                  <label class="visually-hidden" for="choose-checkbox-1">1</label>
+                  <div class="modal__stars-star"></div>
+                </li>
+                <li class="modal__stars-item" tabindex="0">
+                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-2">
+                  <label class="visually-hidden" for="choose-checkbox-2">2</label>
+                  <div class="modal__stars-star"></div>
+                </li>
+                <li class="modal__stars-item" tabindex="0">
+                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-3">
+                  <label class="visually-hidden" for="choose-checkbox-3">3</label>
+                  <div class="modal__stars-star"></div>
+                </li>
+                <li class="modal__stars-item" tabindex="0">
+                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-4">
+                  <label class="visually-hidden" for="choose-checkbox-4">4</label>
+                  <div class="modal__stars-star"></div>
+                </li>
+                <li class="modal__stars-item" tabindex="0">
+                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-5">
+                  <label class="visually-hidden" for="choose-checkbox-5">5</label>
+                  <div class="modal__stars-star"></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <label>
+                <textarea name="modal-comment" placeholder="Комментарий"></textarea>
+              </label>
+            </li>
+          </ul>
+          <button aria-label="Отправить форму" type="submit">Оставить отзыв</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script rel="preconnect" src="js/vendors.js"></script>
+  <script>
+    svg4everybody(); // run it now or whenever you are ready
+  </script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
