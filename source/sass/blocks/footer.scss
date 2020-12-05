@@ -1,0 +1,35 @@
+.footer {
+  background-color: $grey-bg;
+}
+
+.footer__container {
+  padding: 15px 0;
+
+  @include flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  padding: 0;
+  list-style: none;
+
+  @include flex;
+}
+
+.footer__item {
+  margin-right: 68px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.footer__link {
+  font-weight: 600;
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

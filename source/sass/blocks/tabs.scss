@@ -1,0 +1,38 @@
+.tabs__tab--hidden {
+  display: none;
+}
+
+.tabs__list {
+  width: 585px;
+
+  @include list;
+  @include flex;
+
+  margin-bottom: 27px;
+}
+
+.tabs__item {
+  font-size: 20px;
+  line-height: 27.3px;
+  width: 33.33%;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
+  border: solid 1px $grey;
+
+  &:hover {
+    color: $white;
+    background-color: $red;
+  }
+
+  &--active {
+    color: $white;
+    background-color: $red;
+
+    &:hover {
+      color: $white;
+      background-color: $red-hover;
+    }
+  }
+}

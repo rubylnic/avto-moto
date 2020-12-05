@@ -1,0 +1,39 @@
+.contacts {
+  margin-bottom: 123px;
+}
+
+.contacts__list {
+  width: 278px;
+}
+
+.contacts__dt {
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: $black;
+
+  &--address {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts__dd {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 25px;
+  color: #1a212f;
+
+  &--address {
+    margin-bottom: 14px;
+    color: $black;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #1a212f;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

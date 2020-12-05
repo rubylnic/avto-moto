@@ -1,0 +1,24 @@
+.main-nav__list {
+  padding: 0;
+  list-style: none;
+
+  @include flex;
+}
+
+.main-nav__item {
+  margin-right: 68px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  font-weight: 600;
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

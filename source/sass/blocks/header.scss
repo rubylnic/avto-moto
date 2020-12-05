@@ -1,0 +1,10 @@
+.header {
+  background-color: $grey-bg;
+}
+
+.header__container {
+  padding: 15px 0;
+
+  @include flex;
+  justify-content: space-between;
+}

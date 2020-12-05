@@ -9,7 +9,7 @@
   <title>Avto Moto</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
 </head>
 
@@ -39,7 +39,164 @@
         </nav>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main container">
+      <section class="item">
+        <div class="slider">
+          <picture class="slider__img">
+            <source type="image/webp" media="(min-width:960px)" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
+            <source type="image/webp" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
+            <source media="(min-width:960px)" srcset="img/picture-1.jpg 1x, img/picture-1@2x.jpg 2x">
+            <img src="img/picture-1@1x.jpg" srcset="img/picture-1@2x.jpg 2x" alt="Автомобиль вид снаружи">
+          </picture>
+          <picture class="slider__img slider__img--hidden">
+            <source type="image/webp" media="(min-width:960px)" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
+            <source type="image/webp" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
+            <source media="(min-width:960px)" srcset="img/picture-2.jpg 1x, img/picture-2@2x.jpg 2x">
+            <img src="img/picture-2@1x.jpg" srcset="img/picture-2@2x.jpg 2x" alt="Автомобиль вид внутри">
+          </picture>
+          <picture class="slider__img slider__img--hidden">
+            <source type="image/webp" media="(min-width:960px)">
+            <source type="image/webp" srcset="img/picture-3@1x.webp 1x">
+            <source media="(min-width:960px)" srcset="img/picture-3.jpg 1x">
+            <img src="img/picture-3@1x.jpg" alt="Спидометр">
+          </picture>
+          <div class="slider__container">
+            <button class="slider__button slider__button--inactive slider__button--previous" aria-label="Предыдущее изображение"></button>
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img src="img/miniature-1.jpg" alt="Автомобиль вид снаружи" class="slider__miniature">
+              </li>
+              <li class="slider__item">
+                <img src="img/miniature-2.jpg" alt="Автомобиль вид внутри" class="slider__miniature">
+              </li>
+              <li class="slider__item">
+                <img src="img/miniature-3.jpg" alt="Спидометр" class="slider__miniature">
+              </li>
+            </ul>
+            <button class="slider__button slider__button--next" aria-label="Следующее изображение"></button>
+          </div>
+        </div>
+        <div class="item__container">
+          <h2 class="item__heading">Марпех 11</h2>
+          <ul class="item__list">
+            <li class="item__item">
+              <svg class="item__img" width="100%" height="100%">
+                <use xlink:href="img/sprite_auto.svg#icon-gas"></use>
+              </svg>
+              <span class="item__text">Бензин</span>
+            </li>
+            <li class="item__item">
+              <svg class="item__img" width="100%" height="100%">
+                <use xlink:href="img/sprite_auto.svg#icon-mechanics"></use>
+              </svg>
+              <span class="item__text">Механика</span>
+            </li>
+            <li class="item__item">
+              <svg class="item__img" width="100%" height="100%">
+                <use xlink:href="img/sprite_auto.svg#icon-horse"></use>
+              </svg>
+              <span class="item__text">100 л.с.</span>
+            </li>
+            <li class="item__item">
+              <svg class="item__img" width="100%" height="100%">
+                <use xlink:href="img/sprite_auto.svg#icon-volume"></use>
+              </svg>
+              <span class="item__text">1,4 л</span>
+            </li>
+          </ul>
+          <div class="item__price">
+            <span class="item__price-now">2 300 000 ₽</span>
+            <span class="item__price-before">2 400 000 ₽</span>
+          </div>
+          <a href="#" class="item__link">Оставить заявку</a>
+          <span class="item__credit">В кредит от 11 000 ₽</span>
+        </section>
+        </div>
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--active">Характеристики</li>
+          <li class="tabs__item">Отзывы</li>
+          <li class="tabs__item">Контакты</li>
+        </ul>
+        <section class="tabs__tab tabs__tab--hidden features">
+          <h2 class="visually-hidden">Характеристики</h2>
+          <table>
+          <tr><td>Трансмиссия</td> <td>Роботизированная</td></tr>
+          <tr><td>Мощность двигателя, л.с.</td> <td>249</td></tr>
+          <tr><td>Тип двигателя</td> <td>Бензиновый</td></tr>
+          <tr><td>Привод</td> <td>Полный</td></tr>
+          <tr><td>Объем двигателя, л</td> <td>2,4</td></tr>
+          <tr><td>Макс.крутящий момент</td> <td>370/4500</td></tr>
+          <tr><td>Количество цилиндров</td> <td>4</td></tr>
+          </table>
+        </section>
+        <section class="tabs__tab tabs__tab--hidden review">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <button class="review__button" type="button">Оставить отзыв</button>
+          <article class="review__article">
+            <span>Борис Иванов</span>
+            <ul>
+              <li class="review__plus">
+                <h3>Достоинства</h3>
+                <p>мощность, внешний вид</p>
+              </li>
+              <li class="review__minus">
+                <h3>Недостатки</h3>
+                <p>Слабые тормозные колодки (пришлось заменить)</p>
+              </li>
+              <li class="review__comment">
+                <h3>Комментарий</h3>
+                <p>Взяли по трейд-ин, на выгодных условиях у дилера. Стильная внешка и крут по базовым характеристикам. Не думал, что пересяду на китайский автопром, но сейчас гоняю и понимаю, что полностью доволен.</p>
+              </li>
+            </ul>
+            <div class="review__rating">
+              <span>Советует</span>
+            </div>
+            <div class="review__container">
+              <time>1 минуту назад</time>
+              <button type="button">Ответить</button>
+            </div>
+          </article>
+          <article class="review__article">
+            <span>Марсель Исмагилов</span>
+            <ul>
+              <li class="review__plus">
+                <h3>Достоинства</h3>
+                <p>Cтиль, комфорт, управляемость</p>
+              </li>
+              <li class="review__minus">
+                <h3>Недостатки</h3>
+                <p> Дорогой ремонт и обслуживание</p>
+              </li>
+              <li class="review__comment review__comment--pp">
+                <h3>Комментарий</h3>
+                <p>Дизайн отличный, управление просто шикарно, ощущения за рулём такой машины особые. Но ремонт очень дорогой. Пару месяцев назад пришлось менять двигатель. По стоимости вышло как новый автомобиль. Так что, если покупать эту машину, надо быть готовым к большим расходам на обслуживание.</p>
+              </li>
+            </ul>
+            <div class="review__rating">
+              <span>Советует</span>
+            </div>
+            <div class="review__container">
+              <time>1 минуту назад</time>
+              <button type="button">Ответить</button>
+            </div>
+          </article>
+        </section>
+        <section class="tabs__tab contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <dl class="contacts__list">
+            <dt class="contacts__dt contacts__dt--address">Адрес</dt>
+            <dd class="contacts__dd contacts__dd--address">Санкт-Петербург, <br> набережная реки Карповки, дом 5</dd>
+            <dt class="contacts__dt">Режим работы</dt>
+            <dd class="contacts__dd">Ежедневно, с 10:00 до 21:00</dd>
+            <dt class="contacts__dt">Телефон</dt>
+            <dd class="contacts__dd" ><a class="contacts__link" href="tel:+78003335599">8 (800) 333-55-99</a></dd>
+            <dt class="contacts__dt">E-mail</dt>
+            <dd class="contacts__dd" ><a class="contacts__link" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a></dd>
+          </dl>
+        </section>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__container container">
         <ul class="footer__list">
@@ -74,62 +231,59 @@
         <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
         <h2 class="modal__heading">Оставить отзыв</h2>
         <form method="post">
-          <ul class="list">
+          <ul class="modal__list">
             <li>
-              <label>
-                <input type="text" name="name" minlength="2" placeholder="Имя" required="">
-              </label>
-              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
+              <strong class="modal__error-message modal__error-message--hidden">Пожалуйста, заполните поле</strong>
+              <input id="name" type="text" name="name" minlength="2" placeholder="Имя" required="">
+              <label for="name"></label>
             </li>
             <li>
               <label>
-                <input type="text" name="advantages" placeholder="Достоинства" required="">
+                <input type="text" name="advantages" placeholder="Достоинства">
               </label>
-              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
             </li>
             <li>
               <label>
-                <input type="text" name="disadvantages" placeholder="Недостатки" required="">
+                <input type="text" name="disadvantages" placeholder="Недостатки">
               </label>
-              <strong class="modal-question__error-message modal-question__error-message--hidden">Пожалуйста, заполните поле</strong>
             </li>
             <li>
-              <span>Оцените товар</span>
+              <span class="modal__rate-heading">Оцените товар</span>
               <ul class="modal__stars">
                 <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-1">
-                  <label class="visually-hidden" for="choose-checkbox-1">1</label>
+                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-1" value="1">
+                  <label class="visually-hidden" for="choose-radio-1">1</label>
                   <div class="modal__stars-star"></div>
                 </li>
                 <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-2">
-                  <label class="visually-hidden" for="choose-checkbox-2">2</label>
+                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-2" value="2">
+                  <label class="visually-hidden" for="choose-radio-2">2</label>
                   <div class="modal__stars-star"></div>
                 </li>
                 <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-3">
-                  <label class="visually-hidden" for="choose-checkbox-3">3</label>
+                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-3" value="3">
+                  <label class="visually-hidden" for="choose-radio-3">3</label>
                   <div class="modal__stars-star"></div>
                 </li>
                 <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-4">
-                  <label class="visually-hidden" for="choose-checkbox-4">4</label>
+                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-4" value="4">
+                  <label class="visually-hidden" for="choose-radio-4">4</label>
                   <div class="modal__stars-star"></div>
                 </li>
                 <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-checkbox" id="choose-checkbox-5">
-                  <label class="visually-hidden" for="choose-checkbox-5">5</label>
+                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-5" value="5">
+                  <label class="visually-hidden" for="choose-radio-5">5</label>
                   <div class="modal__stars-star"></div>
                 </li>
               </ul>
             </li>
             <li>
-              <label>
-                <textarea name="modal-comment" placeholder="Комментарий"></textarea>
-              </label>
+              <strong class="modal__comment-error-message modal__comment-error-message--hidden">Пожалуйста, заполните поле</strong>
+              <textarea id="textarea" name="comment" placeholder="Комментарий" required></textarea>
+              <label for="textarea"></label>
             </li>
           </ul>
-          <button aria-label="Отправить форму" type="submit">Оставить отзыв</button>
+          <button class="modal__button" aria-label="Отправить форму" type="submit">Оставить отзыв</button>
         </form>
       </div>
     </div>

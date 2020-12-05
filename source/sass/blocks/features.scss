@@ -1,0 +1,22 @@
+.features {
+  position: relative;
+  left: -5px;
+  margin-bottom: 140px;
+}
+
+.features table {
+  width: 571px;
+}
+
+.features tr {
+  padding-top: 18px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #d7d9df;
+
+  @include flex;
+  justify-content: space-between;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
