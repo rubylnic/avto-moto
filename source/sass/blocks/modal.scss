@@ -153,10 +153,16 @@
 }
 
 .modal__stars {
+  height: 50px;
+
   @include list;
+  @include flex;
+  margin-bottom: 14px;
+  align-items: center;
 }
 
 .modal__rate-heading {
+  display: flex;
   font-size: 15px;
   font-weight: 600;
   line-height: 20.5px;

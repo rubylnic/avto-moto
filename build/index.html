@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
@@ -80,15 +81,20 @@
           <h2 class="item__heading">Марпех 11</h2>
           <ul class="item__list">
             <li class="item__item">
-              <svg class="item__img" width="100%" height="100%">
-                <use xlink:href="img/sprite_auto.svg#icon-gas"></use>
-              </svg>
+              <svg class="item__img" width="100%" height="100%" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.74597" y="0.75" width="10.9495" height="19.9131" rx="1.25" stroke="#48494D" stroke-width="1.5"></rect>
+                <mask id="path-2-inside-1" fill="white">
+                <rect x="3.0968" y="3.0968" width="8.2583" height="7.22601" rx="1"></rect>
+                </mask>
+                <rect x="3.0968" y="3.0968" width="8.2583" height="7.22601" rx="1" stroke="#48494D" stroke-width="3" mask="url(#path-2-inside-1)"></rect>
+                <path d="M12.9474 10.834V10.834C14.1305 10.834 15.0896 11.7931 15.0896 12.9763V15.6395C15.0896 16.985 15.6252 19.1298 17.5889 18.9072C19.5527 18.6846 19.9097 16.6819 19.9097 15.255C19.9097 13.8282 19.1956 10.6418 19.3741 7.95073C19.5527 5.25966 21.1593 2.95304 22.409 1.99194" stroke="#48494D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect x="0.497979" y="20.506" width="13.4454" height="0.995959" rx="0.497979" fill="#48494D" stroke="#48494D" stroke-width="0.995959"></rect>
+                <path d="M20.4182 5.47778V5.47778C21.3327 5.70145 21.944 6.56319 21.8527 7.50029L21.7677 8.37356C21.6801 9.27332 20.9238 9.9596 20.0198 9.9596V9.9596" stroke="#48494D" stroke-width="1.5"></path>
+                </svg>
               <span class="item__text">Бензин</span>
             </li>
             <li class="item__item">
-              <svg class="item__img" width="100%" height="100%">
-                <use xlink:href="img/sprite_auto.svg#icon-mechanics"></use>
-              </svg>
+              <svg class="item__img" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.194 12h17.612" stroke="#48494D" stroke-width="1.5"></path><path d="M4.194 12h17.612" stroke="#48494D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 6.53v10.94" stroke="#48494D" stroke-width="1.5"></path><path d="M13 6.53v10.94" stroke="#48494D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.806 6.53V12" stroke="#48494D" stroke-width="1.5"></path><path d="M21.806 6.53V12" stroke="#48494D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.194 6.53v10.94" stroke="#48494D" stroke-width="1.5"></path><path d="M4.194 6.53v10.94m0-10.94a2.686 2.686 0 100-5.373 2.686 2.686 0 000 5.372zm8.806 0a2.686 2.686 0 100-5.373 2.686 2.686 0 000 5.372zm8.806 0a2.686 2.686 0 100-5.373 2.686 2.686 0 000 5.372zM4.194 22.843a2.686 2.686 0 100-5.373 2.686 2.686 0 000 5.373zm8.806 0a2.686 2.686 0 100-5.372 2.686 2.686 0 000 5.372z" stroke="#48494D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               <span class="item__text">Механика</span>
             </li>
             <li class="item__item">
@@ -118,7 +124,7 @@
           <li class="tabs__item">Отзывы</li>
           <li class="tabs__item">Контакты</li>
         </ul>
-        <section class="tabs__tab tabs__tab--hidden features">
+        <section class="tabs__tab features">
           <h2 class="visually-hidden">Характеристики</h2>
           <table>
           <tr><td>Трансмиссия</td> <td>Роботизированная</td></tr>
@@ -150,6 +156,13 @@
               </li>
             </ul>
             <div class="review__rating">
+              <div class="review__stars">
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+              </div>
               <span>Советует</span>
             </div>
             <div class="review__container">
@@ -173,7 +186,14 @@
                 <p>Дизайн отличный, управление просто шикарно, ощущения за рулём такой машины особые. Но ремонт очень дорогой. Пару месяцев назад пришлось менять двигатель. По стоимости вышло как новый автомобиль. Так что, если покупать эту машину, надо быть готовым к большим расходам на обслуживание.</p>
               </li>
             </ul>
-            <div class="review__rating">
+            <div class="review__rating rating">
+              <div class="review__stars">
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+              </div>
               <span>Советует</span>
             </div>
             <div class="review__container">
@@ -182,7 +202,7 @@
             </div>
           </article>
         </section>
-        <section class="tabs__tab contacts">
+        <section class="tabs__tab tabs__tab--hidden contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <dl class="contacts__list">
             <dt class="contacts__dt contacts__dt--address">Адрес</dt>
@@ -194,6 +214,9 @@
             <dt class="contacts__dt">E-mail</dt>
             <dd class="contacts__dd"><a class="contacts__link" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a></dd>
           </dl>
+          <div class="contacts__map">
+            <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ff88ecda2cead79cc7291dde8cfaa49537d750c88932f0f798794387ef93c22&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
         </section>
       </div>
     </main>
@@ -239,44 +262,44 @@
             </li>
             <li>
               <label>
-                <input type="text" name="advantages" placeholder="Достоинства">
+                <input id="advantages" type="text" name="advantages" placeholder="Достоинства">
               </label>
             </li>
             <li>
               <label>
-                <input type="text" name="disadvantages" placeholder="Недостатки">
+                <input id="disadvantages" type="text" name="disadvantages" placeholder="Недостатки">
               </label>
             </li>
-            <li>
+            <li class="modal__stars">
               <span class="modal__rate-heading">Оцените товар</span>
-              <ul class="modal__stars">
-                <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-1" value="1">
-                  <label class="visually-hidden" for="choose-radio-1">1</label>
-                  <div class="modal__stars-star"></div>
-                </li>
-                <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-2" value="2">
-                  <label class="visually-hidden" for="choose-radio-2">2</label>
-                  <div class="modal__stars-star"></div>
-                </li>
-                <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-3" value="3">
-                  <label class="visually-hidden" for="choose-radio-3">3</label>
-                  <div class="modal__stars-star"></div>
-                </li>
-                <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-4" value="4">
-                  <label class="visually-hidden" for="choose-radio-4">4</label>
-                  <div class="modal__stars-star"></div>
-                </li>
-                <li class="modal__stars-item" tabindex="0">
-                  <input class="visually-hidden" type="radio" name="choose-radio" id="choose-radio-5" value="5">
-                  <label class="visually-hidden" for="choose-radio-5">5</label>
-                  <div class="modal__stars-star"></div>
-                </li>
-              </ul>
-            </li>
+              <div class="modal__stars-container rating">
+              <div id="half-stars-example">
+                <div class="rating-group">
+                  <input class="rating__input rating__input--none" checked="" name="rating2" id="rating2-0" value="0" type="radio">
+                  <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                  <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                  <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                  <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                  <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                  <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                  <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                  <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                  <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                  <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                  <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                  <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                </div>
+              </div>
+            </div></li>
             <li>
               <strong class="modal__comment-error-message modal__comment-error-message--hidden">Пожалуйста, заполните поле</strong>
               <textarea id="textarea" name="comment" placeholder="Комментарий" required=""></textarea>
@@ -288,6 +311,34 @@
       </div>
     </div>
   </section>
+  <template id="comment">
+    <article class="review__article">
+      <span class="comment__name">Марсель Исмагилов</span>
+      <ul>
+        <li class="review__plus">
+          <h3>Достоинства</h3>
+          <p class="comment__plus">Cтиль, комфорт, управляемость</p>
+        </li>
+        <li class="review__minus">
+          <h3>Недостатки</h3>
+          <p class="comment__minus"> Дорогой ремонт и обслуживание</p>
+        </li>
+        <li class="review__comment review__comment--pp">
+          <h3>Комментарий</h3>
+          <p class="comment__comment">Дизайн отличный, управление просто шикарно, ощущения за рулём такой машины особые. Но ремонт очень дорогой. Пару месяцев назад пришлось менять двигатель. По стоимости вышло как новый автомобиль. Так что, если покупать эту машину, надо быть готовым к большим расходам на обслуживание.</p>
+        </li>
+      </ul>
+      <div class="review__rating">
+        <div class="review__stars">
+        </div>
+        <span>Советует</span>
+      </div>
+      <div class="review__container">
+        <time>1 минуту назад</time>
+        <button type="button">Ответить</button>
+      </div>
+    </article>
+  </template>
 
   <script rel="preconnect" src="js/vendors.js"></script>
   <script>

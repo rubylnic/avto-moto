@@ -20,12 +20,12 @@
 
 .item__list {
   width: 86%;
-  margin-bottom: 37px;
 
   @include list;
   @include flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-bottom: 37px;
 }
 
 .item__item {
@@ -41,7 +41,7 @@
 
 .item__img {
   width: 30px;
-  height: 22px;
+  height: 24px;
   margin: 0 auto;
   margin-bottom: 10px;
 }

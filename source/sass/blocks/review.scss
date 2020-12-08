@@ -18,6 +18,13 @@
   color: $red;
   border: 1px solid $red;
   background-color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $red;
+  }
 }
 
 .review__article {
@@ -99,13 +106,24 @@
 }
 
 .review__rating {
+  @include flex;
   margin-bottom: 28px;
 }
 
 .review__rating span {
+  display: block;
   font-size: 15px;
   line-height: 20.43px;
   color: $red;
+}
+
+.review__stars {
+  display: inline-flex;
+  margin-right: 55px;
+
+  .rating__label {
+    font-size: 1.3rem;
+  }
 }
 
 .review__container {

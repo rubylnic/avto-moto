@@ -1,9 +1,14 @@
 .contacts {
+  width: 780px;
+
+  @include flex;
+  justify-content: space-between;
   margin-bottom: 123px;
 }
 
 .contacts__list {
   width: 278px;
+  margin: 0;
 }
 
 .contacts__dt {
@@ -36,4 +41,9 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.contacts__map {
+  width: 431px;
+  height: 271px;
 }
