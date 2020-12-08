@@ -191,10 +191,10 @@
     commentData.querySelector('.comment__plus').textContent = pluses.value;
     commentData.querySelector('.comment__minus').textContent = minuses.value;
     commentData.querySelector('.comment__comment').textContent = comment.value;
-    makeStars(getRate(), commentData.querySelector('.review__stars'));
+    makeStars(getRate(), commentData.querySelector('.rating__stars'));
 
     if (getRate() < 2.5) {
-      commentData.querySelector('.review__rating span').textContent = 'Не советует';
+      commentData.querySelector('.rating span').textContent = 'Не советует';
     }
 
     return commentData;
@@ -276,13 +276,18 @@
     previousSlide();
   });
 
+  var hideAllSlides = function (slidesList) {
+    slidesList.forEach(function (slide) {
+      slide.classList.add('slider__img--hidden');
+    });
+  };
+
   miniatures.forEach(function (miniature, index) {
     miniature.addEventListener('click', function (evt) {
       evt.preventDefault();
-      slides.forEach(function (slide) {
-        slide.classList.add('slider__img--hidden');
-      });
+      hideAllSlides(slides);
       slides[index].classList.remove('slider__img--hidden');
+      slides[index].classList.add('slider__img--animation');
       slideIndex = index;
     });
   });
@@ -294,17 +299,25 @@
   var tabBtns = document.querySelectorAll('.tabs__item');
   var tabs = document.querySelectorAll('.tabs__tab');
 
+  var makeTabsActive = function (buttons) {
+    buttons.forEach(function (button) {
+      button.classList.remove('tabs__item--active');
+    });
+  };
+
+  var hideTabs = function (tabsList) {
+    tabsList.forEach(function (btn) {
+      btn.classList.add('tabs__tab--hidden');
+    });
+  };
+
 
   tabBtns.forEach(function (tabButton, i) {
     tabButton.addEventListener('click', function () {
-      tabBtns.forEach(function (button) {
-        button.classList.remove('tabs__item--active');
-      });
+      makeTabsActive(tabBtns);
       tabButton.classList.add('tabs__item--active');
 
-      tabs.forEach(function (btn) {
-        btn.classList.add('tabs__tab--hidden');
-      });
+      hideTabs(tabs);
       tabs[i].classList.remove('tabs__tab--hidden');
     });
   });

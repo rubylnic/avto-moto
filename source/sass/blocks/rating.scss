@@ -1,0 +1,20 @@
+.rating {
+  @include flex;
+  margin-bottom: 28px;
+}
+
+.rating span {
+  display: block;
+  font-size: 15px;
+  line-height: 20.43px;
+  color: $red;
+}
+
+.rating__stars {
+  display: inline-flex;
+  margin-right: 55px;
+
+  .rating__label {
+    font-size: 1.3rem;
+  }
+}

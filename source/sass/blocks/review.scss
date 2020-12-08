@@ -105,27 +105,6 @@
   color: $black;
 }
 
-.review__rating {
-  @include flex;
-  margin-bottom: 28px;
-}
-
-.review__rating span {
-  display: block;
-  font-size: 15px;
-  line-height: 20.43px;
-  color: $red;
-}
-
-.review__stars {
-  display: inline-flex;
-  margin-right: 55px;
-
-  .rating__label {
-    font-size: 1.3rem;
-  }
-}
-
 .review__container {
   margin-bottom: 21px;
 
@@ -133,7 +112,7 @@
   align-items: center;
 }
 
-.review__container time {
+.review__container span {
   font-size: 14px;
   line-height: 19px;
   margin-right: 24px;

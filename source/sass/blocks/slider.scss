@@ -18,6 +18,25 @@
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
   }
+
+  &--new {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "new model";
+      width: 122px;
+      height: 30px;
+      padding-top: 5px;
+      background-color: $red;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.07em;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
 }
 
 @keyframes slide {

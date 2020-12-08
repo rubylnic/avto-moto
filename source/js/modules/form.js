@@ -164,10 +164,10 @@
     commentData.querySelector('.comment__plus').textContent = pluses.value;
     commentData.querySelector('.comment__minus').textContent = minuses.value;
     commentData.querySelector('.comment__comment').textContent = comment.value;
-    makeStars(getRate(), commentData.querySelector('.review__stars'));
+    makeStars(getRate(), commentData.querySelector('.rating__stars'));
 
     if (getRate() < 2.5) {
-      commentData.querySelector('.review__rating span').textContent = 'Не советует';
+      commentData.querySelector('.rating span').textContent = 'Не советует';
     }
 
     return commentData;

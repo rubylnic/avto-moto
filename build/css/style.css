@@ -454,6 +454,21 @@ input[type="radio"].visually-hidden {
             animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in; }
+  .slider__img--new::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "new model";
+    width: 122px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #d12136;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.07em;
+    font-weight: 600;
+    text-align: center; }
 
 @-webkit-keyframes slide {
   from {
@@ -796,28 +811,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   color: #000000; }
 
-.review__rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 28px; }
-
-.review__rating span {
-  display: block;
-  font-size: 15px;
-  line-height: 20.43px;
-  color: #d12136; }
-
-.review__stars {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 55px; }
-  .review__stars .rating__label {
-    font-size: 1.3rem; }
-
 .review__container {
   margin-bottom: 21px;
   display: -webkit-box;
@@ -829,7 +822,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: center;
           align-items: center; }
 
-.review__container time {
+.review__container span {
   font-size: 14px;
   line-height: 19px;
   margin-right: 24px;
@@ -883,6 +876,28 @@ input[type="radio"].visually-hidden {
 .contacts__map {
   width: 431px;
   height: 271px; }
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 28px; }
+
+.rating span {
+  display: block;
+  font-size: 15px;
+  line-height: 20.43px;
+  color: #d12136; }
+
+.rating__stars {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 55px; }
+  .rating__stars .rating__label {
+    font-size: 1.3rem; }
 
 /*
 *  Pure CSS star rating that works without reversing order
