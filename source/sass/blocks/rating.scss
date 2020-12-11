@@ -1,6 +1,6 @@
 .rating {
   @include flex;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .rating span {
@@ -15,6 +15,12 @@
   margin-right: 55px;
 
   .rating__label {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    cursor: initial;
+  }
+
+  .rating__label--full-half {
+    margin-right: -22px;
+    z-index: 2;
   }
 }

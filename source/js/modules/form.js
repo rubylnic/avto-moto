@@ -65,8 +65,9 @@
         });
         return checked;
       };
+
+      getCheckedRadio().checked = true;
     }
-    getCheckedRadio().checked = true;
 
     name.focus();
   };

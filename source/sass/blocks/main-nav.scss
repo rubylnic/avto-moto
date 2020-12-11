@@ -1,12 +1,20 @@
+.main-nav {
+  @include flex;
+  align-items: center;
+}
+
 .main-nav__list {
+  max-width: 862px;
   padding: 0;
   list-style: none;
 
   @include flex;
+  @include list;
 }
 
 .main-nav__item {
   margin-right: 68px;
+  margin-bottom: 10px;
 
   &:last-of-type {
     margin-right: 0;
@@ -18,7 +26,8 @@
   text-decoration: none;
   color: $grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }

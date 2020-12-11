@@ -5,20 +5,20 @@
 }
 
 .review__button {
-  font-size: 14px;
-  line-height: 19.1px;
   position: absolute;
   top: 0;
   right: 5px;
   width: 189px;
   padding: 16.5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 19.1px;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: $red;
   border: 1px solid $red;
   background-color: $white;
-  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -41,19 +41,19 @@
 }
 
 .review span {
+  display: block;
+  margin-bottom: 14px;
   font-size: 20px;
   font-weight: 600;
   line-height: 20.3px;
-  display: block;
-  margin-bottom: 14px;
 }
 
 .review h3 {
-  font-size: 15px;
-  line-height: 20.43px;
   margin: 0;
   margin-bottom: 4px;
   color: $black;
+  font-size: 15px;
+  line-height: 20.43px;
 }
 
 .review__plus {
@@ -62,12 +62,12 @@
   margin-left: 16px;
 
   &::before {
-    font-size: 15;
     position: absolute;
     left: -40px;
     width: 9px;
     height: 21px;
     content: "+";
+    font-size: 15;
     color: $red;
   }
 }
@@ -78,12 +78,12 @@
   margin-left: 16px;
 
   &::before {
-    font-size: 15;
     position: absolute;
     left: -40px;
     width: 9px;
     height: 21px;
     content: "-";
+    font-size: 15px;
     color: $red;
   }
 }
@@ -99,10 +99,10 @@
 }
 
 .review p {
-  font-size: 15px;
-  line-height: 20.43px;
   margin: 0;
   color: $black;
+  font-size: 15px;
+  line-height: 20.43px;
 }
 
 .review__container {
@@ -113,9 +113,10 @@
 }
 
 .review__container span {
+  margin-right: 24px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 19px;
-  margin-right: 24px;
   color: $grey-t;
 }
 

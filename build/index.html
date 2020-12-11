@@ -26,16 +26,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Автомобили</a>
+            <a class="main-nav__link" href="#">Автомобили</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты</a>
+            <a class="main-nav__link" href="#">Контакты</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Услуги</a>
+            <a class="main-nav__link" href="#">Услуги</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Вакансии</a>
+            <a class="main-nav__link" href="#">Вакансии</a>
           </li>
         </ul>
       </nav>
@@ -44,41 +44,59 @@
   <main class="main container">
     <section class="item">
       <div class="slider">
-        <picture class="slider__img slider__img--new">
-          <source type="image/webp" media="(min-width:960px)" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
-          <source type="image/webp" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
-          <source media="(min-width:960px)" srcset="img/picture-1.jpg 1x, img/picture-1@2x.jpg 2x">
-          <img src="img/picture-1@1x.jpg" srcset="img/picture-1@2x.jpg 2x" width="600" height="375" alt="Автомобиль вид снаружи">
-        </picture>
-        <picture class="slider__img slider__img--hidden">
-          <source type="image/webp" media="(min-width:960px)" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
-          <source type="image/webp" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
-          <source media="(min-width:960px)" srcset="img/picture-2.jpg 1x, img/picture-2@2x.jpg 2x">
-          <img src="img/picture-2@1x.jpg" srcset="img/picture-2@2x.jpg 2x" alt="Автомобиль вид внутри">
-        </picture>
-        <picture class="slider__img slider__img--hidden">
-          <source type="image/webp" srcset="img/picture-3@1x.webp 1x">
-          <source media="(min-width:960px)" srcset="img/picture-3.jpg 1x">
-          <img src="img/picture-3@1x.jpg" alt="Спидометр">
-        </picture>
+        <ul class="slider__images">
+          <li class="slider__img slider__img--new">
+            <picture>
+              <source type="image/webp" media="(min-width:960px)" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/picture-1.jpg 1x, img/picture-1@2x.jpg 2x">
+              <img src="img/picture-1@1x.jpg" srcset="img/picture-1@2x.jpg 2x" width="600" height="auto" alt="Автомобиль вид снаружи">
+            </picture>
+          </li>
+          <li class="slider__img slider__img--hidden">
+            <picture>
+              <source type="image/webp" media="(min-width:960px)" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/picture-2.jpg 1x, img/picture-2@2x.jpg 2x">
+              <img src="img/picture-2@1x.jpg" srcset="img/picture-2@2x.jpg 2x" width="600" height="auto" alt="Автомобиль вид внутри">
+            </picture>
+          </li>
+          <li class="slider__img slider__img--hidden">
+            <picture>
+              <source type="image/webp" media="(min-width:960px)" srcset="img/picture-3@1x.webp 1x, img/picture-3@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-3@1x.webp 1x, img/picture-3@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/picture-3.jpg 1x, img/picture-3@2x.jpg 2x">
+              <img src="img/picture-3@1x.jpg" srcset="img/picture-3@2x.jpg 2x" width="600" height="auto" alt="Спидометр">
+            </picture>
+          </li>
+        </ul>
         <div class="slider__container">
           <button class="slider__button slider__button--inactive slider__button--previous" type="button" aria-label="Предыдущее изображение"></button>
           <ul class="slider__list">
             <li class="slider__item">
-              <img src="img/miniature-1.jpg" alt="Автомобиль вид снаружи" class="slider__miniature">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-1@1x.webp 1x, img/miniature-1@2x.webp 2x">
+              <source type="image/webp" srcset="img/miniature-1@1x.webp 1x, img/miniature-1@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/miniature-1.jpg 1x, img/miniature-1@2x.jpg 2x">
+              <img src="img/miniature-1@1x.jpg" srcset="img/miniature-1@2x.jpg 2x" width="128" height="auto" alt="Автомобиль вид снаружи">
             </li>
             <li class="slider__item">
-              <img src="img/miniature-2.jpg" alt="Автомобиль вид внутри" class="slider__miniature">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-2@1x.webp 1x, img/miniature-2@2x.webp 2x">
+              <source type="image/webp" srcset="img/miniature-2@1x.webp 1x, img/miniature-2@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/miniature-2.jpg 1x, img/miniature-2@2x.jpg 2x">
+              <img src="img/miniature-2@1x.jpg" srcset="img/miniature-2@2x.jpg 2x" width="128" height="auto" alt="Автомобиль вид внутри">
             </li>
             <li class="slider__item">
-              <img src="img/miniature-3.jpg" alt="Спидометр" class="slider__miniature">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-3@1x.webp 1x, img/miniature-3@2x.webp 2x">
+              <source type="image/webp" srcset="img/miniature-3@1x.webp 1x, img/miniature-3@2x.webp 2x">
+              <source media="(min-width:960px)" srcset="img/miniature-3.jpg 1x, img/miniature-3@2x.jpg 2x">
+              <img src="img/miniature-3@1x.jpg" srcset="img/miniature-3@2x.jpg 2x" width="128" height="auto" alt="Спидометр">
             </li>
           </ul>
           <button class="slider__button slider__button--next" type="button" aria-label="Следующее изображение"></button>
         </div>
       </div>
       <div class="item__container">
-        <h2 class="item__heading">Марпех 11</h2>
+        <h2>Марпех 11</h2>
         <ul class="item__list">
           <li class="item__item">
             <svg class="item__img" width="100%" height="100%" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,9 +138,9 @@
     </section>
     <div class="tabs">
       <ul class="tabs__list">
-        <li class="tabs__item tabs__item--active">Характеристики</li>
-        <li class="tabs__item">Отзывы</li>
-        <li class="tabs__item">Контакты</li>
+        <li class="tabs__item tabs__item--active" tabindex="0">Характеристики</li>
+        <li class="tabs__item" tabindex="0">Отзывы</li>
+        <li class="tabs__item" tabindex="0">Контакты</li>
       </ul>
       <section class="tabs__tab features">
         <h2 class="visually-hidden">Характеристики</h2>
@@ -250,7 +268,6 @@
   <section class="modal modal--closed">
     <div class="modal__overlay">
       <div class="modal__container">
-        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
         <h2 class="modal__heading">Оставить отзыв</h2>
         <form method="post">
           <ul class="modal__list">
@@ -260,12 +277,12 @@
               <label for="name"></label>
             </li>
             <li>
-              <label>
+              <label for="advantages">
                 <input id="advantages" type="text" name="advantages" placeholder="Достоинства">
               </label>
             </li>
             <li>
-              <label>
+              <label for="disadvantages">
                 <input id="disadvantages" type="text" name="disadvantages" placeholder="Недостатки">
               </label>
             </li>
@@ -306,6 +323,7 @@
           </ul>
           <button class="modal__button" aria-label="Отправить форму" type="submit">Оставить отзыв</button>
         </form>
+        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
       </div>
     </div>
   </section>

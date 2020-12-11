@@ -4,6 +4,10 @@
   margin-top: 16px;
 }
 
+.slider__images {
+  @include list;
+}
+
 .slider__img {
   display: block;
   width: 600px;
@@ -80,7 +84,8 @@
     opacity: 0.5;
 
     &:hover {
-      opacity: 1;
+      cursor: initial;
+      filter: none;
     }
   }
 }

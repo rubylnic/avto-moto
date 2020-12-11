@@ -6,12 +6,12 @@
   justify-content: space-between;
 }
 
-.item__heading {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 41px;
+.item h2 {
   margin: 0;
   margin-bottom: 31px;
+  line-height: 41px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .item__container {
@@ -62,10 +62,10 @@
 }
 
 .item__price-now {
+  margin-right: 30px;
   font-size: 35px;
   font-weight: 700;
   line-height: 48px;
-  margin-right: 30px;
 }
 
 .item__price-before {
@@ -87,13 +87,13 @@
 }
 
 .item__link {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19px;
   display: block;
   width: 196px;
   margin-bottom: 16px;
   padding: 16.5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.12em;
@@ -107,13 +107,13 @@
 }
 
 .item__credit {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19px;
   display: block;
   width: 222px;
   padding: 16.5px 0;
   cursor: default;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.12em;

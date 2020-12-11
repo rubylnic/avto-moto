@@ -59,6 +59,16 @@
       slides[index].classList.remove('slider__img--hidden');
       slides[index].classList.add('slider__img--animation');
       slideIndex = index;
+      if (slideIndex > 0) {
+        buttonPrevious.classList.remove('slider__button--inactive');
+        buttonNext.classList.remove('slider__button--inactive');
+      }
+      if (slideIndex === 0) {
+        buttonPrevious.classList.add('slider__button--inactive');
+      }
+      if (slideIndex === miniatures.length - 1) {
+        buttonNext.classList.add('slider__button--inactive');
+      }
     });
   });
 }

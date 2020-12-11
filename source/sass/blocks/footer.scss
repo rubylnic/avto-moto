@@ -29,7 +29,8 @@
   text-decoration: none;
   color: $grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }

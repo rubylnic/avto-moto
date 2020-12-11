@@ -47,21 +47,21 @@
   &:focus,
   &:active,
   &:hover {
-    opacity: 0.5;
+    opacity: 0.2;
   }
 }
 
 .modal__heading {
+  margin-bottom: 24px;
   font-size: 25px;
   font-weight: 600;
   line-height: 34px;
-  margin-bottom: 24px;
   text-align: center;
 }
 
 .modal__error-message {
-  font-weight: 400;
   position: relative;
+  font-weight: 400;
   bottom: 5px;
   color: $red;
 }
@@ -71,9 +71,9 @@
 }
 
 .modal__comment-error-message {
-  font-weight: 400;
   position: relative;
   bottom: 5px;
+  font-weight: 400;
   color: $red;
 }
 
@@ -112,7 +112,6 @@
     position: relative;
 
     &::before {
-      font-size: 17px;
       position: absolute;
       top: -10px;
       left: -292px;
@@ -120,6 +119,7 @@
       height: 6px;
       content: "*";
       color: $red;
+      font-size: 17px;
     }
   }
 }
@@ -140,13 +140,13 @@
     position: relative;
 
     &::before {
-      font-size: 17px;
       position: absolute;
       right: 286px;
       bottom: 112px;
       width: 6px;
       height: 6px;
       content: "*";
+      font-size: 17px;
       color: $red;
     }
   }
@@ -161,6 +161,12 @@
   align-items: center;
 }
 
+.modal__stars-container {
+  padding: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .modal__rate-heading {
   display: flex;
   font-size: 15px;
@@ -170,14 +176,14 @@
 }
 
 .modal__button {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19px;
   display: block;
   width: 190px;
   margin: 0 auto;
   padding: 16px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
