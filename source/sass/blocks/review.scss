@@ -1,5 +1,6 @@
 .review {
   position: relative;
+
   margin-bottom: 140px;
   padding-top: 7px;
 }
@@ -8,17 +9,21 @@
   position: absolute;
   top: 0;
   right: 5px;
+
   width: 189px;
   padding: 16.5px 0;
-  cursor: pointer;
+
   font-size: 14px;
   line-height: 19.1px;
-  text-align: center;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+
   color: $red;
   border: 1px solid $red;
   background-color: $white;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -29,6 +34,7 @@
 
 .review__article {
   padding-top: 24px;
+
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
 
   &:first-of-type {
@@ -37,54 +43,74 @@
 }
 
 .review__article ul {
-  @include list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review span {
   display: block;
+
   margin-bottom: 14px;
+
   font-size: 20px;
   font-weight: 600;
   line-height: 20.3px;
 }
 
+.review .review__span-m {
+  display: none;
+}
+
 .review h3 {
   margin: 0;
   margin-bottom: 4px;
-  color: $black;
+
   font-size: 15px;
   line-height: 20.43px;
+
+  color: $black;
 }
 
 .review__plus {
   position: relative;
+
   margin-bottom: 14px;
   margin-left: 16px;
 
   &::before {
     position: absolute;
-    left: -40px;
+    left: -15px;
+
     width: 9px;
     height: 21px;
-    content: "+";
-    font-size: 15;
+
+    font-size: 15px;
+
     color: $red;
+
+    content: "+";
   }
 }
 
 .review__minus {
   position: relative;
+
   margin-bottom: 12px;
   margin-left: 16px;
 
   &::before {
     position: absolute;
-    left: -40px;
+    left: -15px;
+
     width: 9px;
     height: 21px;
-    content: "-";
+
     font-size: 15px;
+
     color: $red;
+
+    content: "-";
   }
 }
 
@@ -93,6 +119,7 @@
 
   &--pp {
     margin-top: 24px;
+
     letter-spacing: -0.002em;
     //picture perfect
   }
@@ -100,9 +127,11 @@
 
 .review p {
   margin: 0;
-  color: $black;
+
   font-size: 15px;
   line-height: 20.43px;
+
+  color: $black;
 }
 
 .review__container {
@@ -115,14 +144,111 @@
 .review__container span {
   margin-right: 24px;
   margin-bottom: 0;
+
   font-size: 14px;
   line-height: 19px;
+
   color: $grey-t;
 }
 
 .review__container button {
   padding: 0;
+
   color: $red;
   border: none;
   background: rgba(0, 0, 0, 0);
+}
+
+@include media-mobile-tablet {
+  .review {
+    padding-top: 0;
+  }
+
+  .review__plus,
+  .review__minus,
+  .review__comment h3 {
+    display: none;
+  }
+
+  .review__article span {
+    font-size: 15px;
+  }
+
+  .review .review__span-m {
+    display: block;
+  }
+
+  .review .review__span-d {
+    display: none;
+  }
+
+  .review__button {
+    position: relative;
+    right: 0;
+
+    margin-bottom: 30px;
+  }
+}
+
+@include media-tablet {
+  .review {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-right: 16px;
+  }
+
+  .review__article {
+    padding-top: 20px;
+  }
+
+  .review span {
+    margin-bottom: 9px;
+  }
+
+  .review__container span {
+    margin-bottom: 0;
+
+    font-size: 14px;
+  }
+
+  .review__comment {
+    margin-bottom: 14px;
+
+    letter-spacing: -0.001em;
+
+    &--pp {
+      margin-top: 0;
+    }
+  }
+}
+
+@include media-mobile {
+  .review {
+    margin-bottom: 30px;
+    padding-top: 18px;
+
+    text-align: center;
+  }
+
+  .review__article {
+    padding-top: 18px;
+
+    text-align: initial;
+  }
+
+  .review span {
+    margin-bottom: 9px;
+  }
+
+  .review__container span {
+    margin-right: 24px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+  }
+
+  .review__comment--pp {
+    width: 98%;
+    margin-top: 0;
+  }
 }

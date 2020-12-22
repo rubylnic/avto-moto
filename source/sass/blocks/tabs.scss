@@ -4,22 +4,26 @@
 
 .tabs__list {
   width: 585px;
-
-  @include list;
-  @include flex;
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-bottom: 27px;
+
+  @include flex;
 }
 
 .tabs__item {
   width: 33.33%;
   padding: 10px 0;
-  cursor: pointer;
-  text-align: center;
+
   font-size: 20px;
   line-height: 27.3px;
-  vertical-align: center;
+
   border: solid 1px $grey;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
 
   &:hover,
   &:focus {
@@ -36,5 +40,27 @@
       color: $white;
       background-color: $red-hover;
     }
+  }
+}
+
+@include media-tablet {
+  .tabs__list {
+    margin-bottom: 0;
+  }
+}
+
+@include media-mobile {
+  .tabs__limiter {
+    overflow-x: scroll;
+
+    width: 100%;
+
+    scrollbar-width: none;
+  }
+
+  .tabs__list {
+    overflow: hidden;
+
+    margin-bottom: 0;
   }
 }

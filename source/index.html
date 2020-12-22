@@ -24,7 +24,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
           <use xlink:href="img/sprite_auto.svg#icon-logo" width="134" height="55"></use>
         </svg>
       </div>
-      <nav class="main-nav">
+      <button class="header__button" type="button" aria-label="Открыть/закрыть меню"></button>
+      <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Автомобили</a>
@@ -49,25 +50,34 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
           <li class="slider__img slider__img--new">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
-              <source type="image/webp" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/picture-1-t@1x.webp 1x, img/picture-1-t@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-1-m@1x.webp 1x, img/picture-1-m@2x.webp 2x">
+                <!-- 1х: 600px; 2x: 1200px -->
               <source media="(min-width:960px)" srcset="img/picture-1.jpg 1x, img/picture-1@2x.jpg 2x">
-              <img src="img/picture-1@1x.jpg" srcset="img/picture-1@2x.jpg 2x" width="600" height="auto" alt="Автомобиль вид снаружи">
+                <!-- 1х: 726px; 2x: 1453px -->
+              <source media="(min-width:768px)" srcset="img/picture-1-t.jpg 1x, img/picture-1-t@2x.jpg 2x">
+                <!-- 1х: 288px; 2x: no -->
+              <img src="img/picture-1-m@1x.jpg" srcset="img/picture-1-m@2x.jpg 2x" width="288" height="180" alt="Автомобиль вид снаружи">
             </picture>
           </li>
           <li class="slider__img slider__img--hidden">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
-              <source type="image/webp" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-2-t@1x.webp 1x, img/picture-2-t@2x.webp 2x">
+                <!-- 1х: 600px; 2x: 1200px -->
               <source media="(min-width:960px)" srcset="img/picture-2.jpg 1x, img/picture-2@2x.jpg 2x">
-              <img src="img/picture-2@1x.jpg" srcset="img/picture-2@2x.jpg 2x" width="600" height="auto" alt="Автомобиль вид внутри">
+                <!-- 1х: 726px; 2x: 1453px -->
+              <img src="img/picture-2-t@1x.jpg" srcset="img/picture-2-t@2x.jpg 2x" width="726" height="453" alt="Автомобиль вид внутри">
             </picture>
           </li>
           <li class="slider__img slider__img--hidden">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-3@1x.webp 1x, img/picture-3@2x.webp 2x">
-              <source type="image/webp" srcset="img/picture-3@1x.webp 1x, img/picture-3@2x.webp 2x">
+              <source type="image/webp" srcset="img/picture-3-t@1x.webp 1x, img/picture-3-t@2x.webp 2x">
+                <!-- 1х: 600px; 2x: 1200px -->
               <source media="(min-width:960px)" srcset="img/picture-3.jpg 1x, img/picture-3@2x.jpg 2x">
-              <img src="img/picture-3@1x.jpg" srcset="img/picture-3@2x.jpg 2x" width="600" height="auto" alt="Спидометр">
+                <!-- 1х: 726px; 2x: 1453px -->
+              <img src="img/picture-3-t@1x.jpg" srcset="img/picture-3-t@2x.jpg 2x" width="726" height="453" alt="Спидометр">
             </picture>
           </li>
         </ul>
@@ -75,22 +85,25 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
           <button class="slider__button slider__button--inactive slider__button--previous" type="button" aria-label="Предыдущее изображение"></button>
           <ul class="slider__list">
             <li class="slider__item">
-              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-1@1x.webp 1x, img/miniature-1@2x.webp 2x">
-              <source type="image/webp" srcset="img/miniature-1@1x.webp 1x, img/miniature-1@2x.webp 2x">
-              <source media="(min-width:960px)" srcset="img/miniature-1.jpg 1x, img/miniature-1@2x.jpg 2x">
-              <img src="img/miniature-1@1x.jpg" srcset="img/miniature-1@2x.jpg 2x" width="128" height="auto" alt="Автомобиль вид снаружи">
+              <picture>
+                <source type="image/webp" srcset="img/miniature-1@1x.webp 1x, img/miniature-1@2x.webp 2x">
+                <!-- 1х: 128px; 2x: 256px -->
+                <img src="img/miniature-1@1x.jpg" srcset="img/miniature-1@2x.jpg 2x" width="128" height="453" alt="Автомобиль вид снаружи">
+              </picture>
             </li>
             <li class="slider__item">
-              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-2@1x.webp 1x, img/miniature-2@2x.webp 2x">
-              <source type="image/webp" srcset="img/miniature-2@1x.webp 1x, img/miniature-2@2x.webp 2x">
-              <source media="(min-width:960px)" srcset="img/miniature-2.jpg 1x, img/miniature-2@2x.jpg 2x">
-              <img src="img/miniature-2@1x.jpg" srcset="img/miniature-2@2x.jpg 2x" width="128" height="auto" alt="Автомобиль вид внутри">
+              <picture>
+                <source type="image/webp" srcset="img/miniature-2@1x.webp 1x, img/miniature-2@2x.webp 2x">
+                  <!-- 1х: 128px; 2x: 256px -->
+                <img src="img/miniature-2@1x.jpg" srcset="img/miniature-2@2x.jpg 2x" width="128" height="80" alt="Автомобиль вид внутри">
+              </picture>
             </li>
             <li class="slider__item">
-              <source type="image/webp" media="(min-width:960px)" srcset="img/miniature-3@1x.webp 1x, img/miniature-3@2x.webp 2x">
-              <source type="image/webp" srcset="img/miniature-3@1x.webp 1x, img/miniature-3@2x.webp 2x">
-              <source media="(min-width:960px)" srcset="img/miniature-3.jpg 1x, img/miniature-3@2x.jpg 2x">
-              <img src="img/miniature-3@1x.jpg" srcset="img/miniature-3@2x.jpg 2x" width="128" height="auto" alt="Спидометр">
+              <picture>
+                <source type="image/webp" srcset="img/miniature-3@1x.webp 1x, img/miniature-3@2x.webp 2x">
+                <!-- 1х: 128px; 2x: 256px -->
+                <img src="img/miniature-3@1x.jpg" srcset="img/miniature-3@2x.jpg 2x" width="128" height="453" alt="Спидометр">
+              </picture>
             </li>
           </ul>
           <button class="slider__button slider__button--next" type="button" aria-label="Следующее изображение"></button>
@@ -131,18 +144,22 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
         </ul>
         <div class="item__price">
           <span class="item__price-now">2 300 000 ₽</span>
-          <span class="item__price-before">2 400 000 ₽</span>
+          <span class="item__price-before">2 &nbsp 400 000 ₽</span>
         </div>
-        <a href="#" class="item__link">Оставить заявку</a>
-        <span class="item__credit">В кредит от 11 000 ₽</span>
+        <div class="item__btns">
+          <a href="#" class="item__link">Оставить заявку</a>
+          <span class="item__credit">В кредит от 11 000 ₽</span>
+        </div>
       </div>
     </section>
     <div class="tabs">
-      <ul class="tabs__list">
-        <li class="tabs__item tabs__item--active" tabindex="0">Характеристики</li>
-        <li class="tabs__item" tabindex="0">Отзывы</li>
-        <li class="tabs__item" tabindex="0">Контакты</li>
-      </ul>
+      <div class="tabs__limiter">
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--active" tabindex="0">Характеристики</li>
+          <li class="tabs__item" tabindex="0">Отзывы</li>
+          <li class="tabs__item" tabindex="0">Контакты</li>
+        </ul>
+      </div>
       <section class="tabs__tab features">
         <h2 class="visually-hidden">Характеристики</h2>
         <table>
@@ -151,90 +168,93 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
         <tr><td>Тип двигателя</td> <td>Бензиновый</td></tr>
         <tr><td>Привод</td> <td>Полный</td></tr>
         <tr><td>Объем двигателя, л</td> <td>2,4</td></tr>
-        <tr><td>Макс.крутящий момент</td> <td>370/4500</td></tr>
+        <tr><td><span class="features__span-desktop">Макс. крутящий момент</span> <span class="features__span-mobile-tablet">Макс. крутящий момент, Нм &nbsp/ &nbsp об/&nbsp мин</span></td> <td>370/4500</td></tr>
         <tr><td>Количество цилиндров</td> <td>4</td></tr>
         </table>
       </section>
       <section class="tabs__tab tabs__tab--hidden review">
         <h2 class="visually-hidden">Отзывы</h2>
         <button class="review__button" type="button">Оставить отзыв</button>
-        <article class="review__article">
-          <span>Борис Иванов</span>
-          <ul>
-            <li class="review__plus">
-              <h3>Достоинства</h3>
-              <p>мощность, внешний вид</p>
-            </li>
-            <li class="review__minus">
-              <h3>Недостатки</h3>
-              <p>Слабые тормозные колодки (пришлось заменить)</p>
-            </li>
-            <li class="review__comment">
-              <h3>Комментарий</h3>
-              <p>Взяли по трейд-ин, на выгодных условиях у дилера. Стильная внешка и крут по базовым характеристикам. Не думал, что пересяду на китайский автопром, но сейчас гоняю и понимаю, что полностью доволен.</p>
-            </li>
-          </ul>
-          <div class="rating">
-            <div class="rating__stars">
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+        <div class="review__articles">
+          <article class="review__article">
+            <span>Борис Иванов</span>
+            <ul>
+              <li class="review__plus">
+                <h3>Достоинства</h3>
+                <p>мощность, внешний вид</p>
+              </li>
+              <li class="review__minus">
+                <h3>Недостатки</h3>
+                <p>Слабые тормозные колодки (пришлось заменить)</p>
+              </li>
+              <li class="review__comment">
+                <h3>Комментарий</h3>
+                <p>Взяли по трейд-ин, на выгодных условиях у дилера. Стильная внешка и крут по базовым характеристикам. Не думал, что пересяду на китайский автопром, но сейчас гоняю и понимаю, что полностью доволен.</p>
+              </li>
+            </ul>
+            <div class="rating">
+              <div class="rating__stars">
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+              </div>
+              <span>Советует</span>
             </div>
-            <span>Советует</span>
-          </div>
-          <div class="review__container">
-            <span>1 минуту назад</span>
-            <button type="button">Ответить</button>
-          </div>
-        </article>
-        <article class="review__article">
-          <span>Марсель Исмагилов</span>
-          <ul>
-            <li class="review__plus">
-              <h3>Достоинства</h3>
-              <p>Cтиль, комфорт, управляемость</p>
-            </li>
-            <li class="review__minus">
-              <h3>Недостатки</h3>
-              <p> Дорогой ремонт и обслуживание</p>
-            </li>
-            <li class="review__comment review__comment--pp">
-              <h3>Комментарий</h3>
-              <p>Дизайн отличный, управление просто шикарно, ощущения за рулём такой машины особые. Но ремонт очень дорогой. Пару месяцев назад пришлось менять двигатель. По стоимости вышло как новый автомобиль. Так что, если покупать эту машину, надо быть готовым к большим расходам на обслуживание.</p>
-            </li>
-          </ul>
-          <div class="rating">
-            <div class="rating__stars">
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
-              <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+            <div class="review__container">
+              <span>1 минуту назад</span>
+              <button type="button">Ответить</button>
             </div>
-            <span>Советует</span>
-          </div>
-          <div class="review__container">
-            <span>1 минуту назад</span>
-            <button type="button">Ответить</button>
-          </div>
-        </article>
+          </article>
+          <article class="review__article">
+            <span class="review__span-d">Марсель Исмагилов</span>
+            <span class="review__span-m">Борис Иванов</span>
+            <ul>
+              <li class="review__plus">
+                <h3>Достоинства</h3>
+                <p>Cтиль, комфорт, управляемость</p>
+              </li>
+              <li class="review__minus">
+                <h3>Недостатки</h3>
+                <p> Дорогой ремонт и обслуживание</p>
+              </li>
+              <li class="review__comment review__comment--pp">
+                <h3>Комментарий</h3>
+                <p>Дизайн отличный, управление просто шикарно, ощущения за рулём такой машины особые. Но ремонт очень дорогой. Пару месяцев назад пришлось менять двигатель. По стоимости вышло как новый автомобиль. Так что, если покупать эту машину, надо быть готовым к большим расходам на обслуживание.</p>
+              </li>
+            </ul>
+            <div class="rating">
+              <div class="rating__stars">
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--full-half"><i class="rating__icon rating__icon--star fa fa-star"></i></div>
+                <div class="rating__label rating__label--half"><i class="rating__icon rating__icon--star fa fa-star-half"></i></div>
+              </div>
+              <span>Советует</span>
+            </div>
+            <div class="review__container">
+              <span>1 минуту назад</span>
+              <button type="button">Ответить</button>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="tabs__tab tabs__tab--hidden contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <dl class="contacts__list">
           <dt class="contacts__dt contacts__dt--address">Адрес</dt>
           <dd class="contacts__dd contacts__dd--address">Санкт-Петербург, <br> набережная реки Карповки, дом 5</dd>
-          <dt class="contacts__dt">Режим работы</dt>
-          <dd class="contacts__dd">Ежедневно, с 10:00 до 21:00</dd>
+          <dt class="contacts__dt contacts__dt--t">Режим работы</dt>
+          <dd class="contacts__dd  contacts__dd--t">Ежедневно, с 10:00 до 21:00</dd>
           <dt class="contacts__dt">Телефон</dt>
           <dd class="contacts__dd" ><a class="contacts__link" href="tel:+78003335599">8 (800) 333-55-99</a></dd>
-          <dt class="contacts__dt">E-mail</dt>
-          <dd class="contacts__dd" ><a class="contacts__link" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a></dd>
+          <dt class="contacts__dt contacts__dt--t">E-mail</dt>
+          <dd class="contacts__dd contacts__dd--t" ><a class="contacts__link" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a></dd>
         </dl>
         <div class="contacts__map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ff88ecda2cead79cc7291dde8cfaa49537d750c88932f0f798794387ef93c22&amp;width=431px&amp;height=271px&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ff88ecda2cead79cc7291dde8cfaa49537d750c88932f0f798794387ef93c22&amp;max-width=431&amp;max-height=283&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </section>
     </div>
@@ -243,25 +263,25 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <div class="footer__container container">
       <ul class="footer__list">
         <li class="footer__item">
-          <a href="#" class="footer__link">Корпоративным клиентам</a>
+          <a class="footer__link" href="#" >Корпоративным клиентам</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Клиентам</a>
+          <a class="footer__link" href="#" >Клиентам</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Аренда авто</a>
+          <a class="footer__link" href="#" >Аренда авто</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Каршеринг</a>
+          <a class="footer__link" href="#" >Каршеринг</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Как продать авто</a>
+          <a class="footer__link" href="#" >Как продать авто</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Traid in</a>
+          <a class="footer__link" href="#" >Traid in</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Test draiv</a>
+          <a class="footer__link" href="#" >Test draiv</a>
         </li>
       </ul>
     </div>

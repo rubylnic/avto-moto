@@ -19,7 +19,7 @@
   var comment = modal.querySelector('[name=comment]');
 
   var commentTemplate = document.querySelector('#comment').content.querySelector('article');
-  var commentsList = document.querySelector('.review');
+  var commentsList = document.querySelector('.review__articles');
 
   var isStorageSupport = true;
   var storage = '';

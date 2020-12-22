@@ -18,24 +18,25 @@
 
   function showSlides(n) {
     n = slideIndex;
+
+    slides.forEach(function (slide) {
+      slide.classList.add('slider__img--hidden');
+      slide.classList.add('slider__img--animation');
+    });
+
     if (n > slides.length - 1) {
       slideIndex = slides.length - 1;
       n = slides.length - 1;
       buttonNext.classList.add('slider__button--inactive');
     }
-    if (n < 0) {
+    if (n <= 0) {
       slideIndex = 0;
       n = 0;
       buttonPrevious.classList.add('slider__button--inactive');
+      slides[n].classList.remove('slider__img--animation');
     }
 
-    slides.forEach(function (slide) {
-      slide.classList.add('slider__img--hidden');
-    });
-
-
     slides[n].classList.remove('slider__img--hidden');
-    slides[n].classList.add('slider__img--animation');
   }
 
   buttonNext.addEventListener('click', function () {

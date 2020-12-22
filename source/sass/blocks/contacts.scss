@@ -1,20 +1,23 @@
 .contacts {
   width: 780px;
+  margin-bottom: 123px;
 
   @include flex;
   justify-content: space-between;
-  margin-bottom: 123px;
 }
 
 .contacts__list {
   width: 278px;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .contacts__dt {
   margin-bottom: 7px;
-  color: $black;
+
   font-weight: 700;
+
+  color: $black;
 
   &--address {
     margin-bottom: 8px;
@@ -24,19 +27,28 @@
 .contacts__dd {
   margin: 0;
   margin-bottom: 25px;
-  color: #1a212f;
+
   font-size: 14px;
   font-weight: 600;
 
+  color: #1a212f;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+
   &--address {
     margin-bottom: 14px;
+
     color: $black;
   }
 }
 
 .contacts__link {
-  text-decoration: none;
   color: #1a212f;
+
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -46,4 +58,55 @@
 .contacts__map {
   width: 431px;
   height: 271px;
+}
+
+@include media-mobile-tablet {
+  .contacts {
+    width: 100%;
+    max-width: 585px;
+  }
+
+  .contacts__list {
+    position: relative;
+    top: -4px;
+  }
+}
+
+@include media-tablet {
+  .contacts {
+    margin-top: 30px;
+  }
+
+  .contacts__map {
+    width: 283px;
+    height: 283px;
+  }
+}
+
+@include media-mobile {
+  .contacts__dt--t,
+  .contacts__dd--t {
+    display: none;
+  }
+
+  .contacts {
+    margin-top: 26px;
+  }
+
+  .contacts__dt {
+    margin-bottom: 2px;
+  }
+
+  .contacts__dd--address {
+    margin-bottom: 9px;
+  }
+
+  .contacts__list {
+    margin-bottom: 17px;
+  }
+
+  .contacts__map {
+    width: 288px;
+    height: 288px;
+  }
 }

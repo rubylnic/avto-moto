@@ -1,26 +1,44 @@
 .rating {
-  @include flex;
   margin-bottom: 15px;
+
+  @include flex;
 }
 
 .rating span {
   display: block;
+
   font-size: 15px;
   line-height: 20.43px;
+
   color: $red;
 }
 
 .rating__stars {
   display: inline-flex;
+
   margin-right: 55px;
 
   .rating__label {
     font-size: 1rem;
+
     cursor: initial;
   }
 
   .rating__label--full-half {
-    margin-right: -22px;
     z-index: 2;
+
+    margin-right: -22px;
+  }
+}
+
+@include media-tablet {
+  .rating {
+    margin-bottom: 21px;
+  }
+}
+
+@include media-mobile {
+  .rating {
+    margin-bottom: 23px;
   }
 }

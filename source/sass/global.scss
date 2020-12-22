@@ -57,6 +57,19 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1210px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@include media-tablet {
+  .container {
+    padding: 0 19px;
+  }
+}
+
+@include media-mobile {
+  .container {
+    padding: 0 15px;
+  }
 }

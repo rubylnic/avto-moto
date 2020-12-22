@@ -3,8 +3,82 @@
 }
 
 .header__container {
-  padding: 15px 0;
+  padding: 15px 20px;
 
   @include flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__button {
+  display: none;
+
+  width: 29px;
+  height: 20px;
+  padding: 0;
+
+  border: none;
+  background: url("../img/menu-button.svg") 0 0 no-repeat;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+@include media-mobile-tablet {
+  .header__button {
+    display: block;
+  }
+
+  .header__button--opened {
+    position: relative;
+
+    background: none;
+
+    &::before {
+      position: absolute;
+      left: 0;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: $grey;
+
+      content: "";
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: $grey;
+
+      content: "";
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@include media-tablet {
+  .header__container {
+    padding: 10px 21px 5px 21px;
+  }
+}
+
+@include media-mobile {
+  .header__container {
+    padding: 10px 23px 4px 10px;
+  }
+
+  .header__button {
+    position: relative;
+    top: -3px;
+  }
 }

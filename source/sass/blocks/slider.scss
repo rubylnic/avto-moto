@@ -1,17 +1,23 @@
 .slider {
   position: relative;
   right: 6px;
+
   margin-top: 16px;
 }
 
 .slider__images {
-  @include list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 32px;
 }
 
 .slider__img {
-  display: block;
-  width: 600px;
-  margin-bottom: 32px;
+  display: flex;
+
+  width: auto;
+
+  justify-content: center;
 
   &--hidden {
     display: none;
@@ -24,21 +30,30 @@
   }
 
   &--new {
-    &::before {
+    picture {
+      position: relative;
+    }
+
+    picture::before {
       position: absolute;
+      z-index: 1;
       top: 0;
       left: 0;
-      content: "new model";
+
       width: 122px;
       height: 30px;
       padding-top: 5px;
-      background-color: $red;
-      color: $white;
-      text-transform: uppercase;
+
       font-size: 10px;
-      letter-spacing: 0.07em;
       font-weight: 600;
+
+      color: $white;
+      background-color: $red;
+
+      content: "new model";
       text-align: center;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
     }
   }
 }
@@ -66,13 +81,16 @@
 .slider__button {
   width: 52px;
   height: 52px;
-  cursor: pointer;
+
   border: none;
   background: url("../img/arrow.svg");
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
     outline: none;
+
     filter: brightness(94%);
   }
 
@@ -85,22 +103,70 @@
 
     &:hover {
       cursor: initial;
+
       filter: none;
     }
   }
 }
 
 .slider__list {
-  @include list;
-  @include flex;
+  margin: 0;
   padding: 0 31px;
+  list-style: none;
+
+  @include flex;
 }
 
 .slider__item {
   margin-right: 25px;
+
   cursor: pointer;
 
   &:last-of-type {
     margin-right: 0;
+  }
+}
+
+.slider__images img {
+  position: relative;
+
+  width: 600px;
+}
+
+@include media-mobile-tablet {
+  .slider__img {
+    margin: 0 auto;
+  }
+}
+
+@include media-tablet {
+  .slider {
+    right: 0;
+
+    margin-bottom: 57px;
+  }
+
+  .slider__images {
+    margin-bottom: 34px;
+  }
+
+  .slider__images img {
+    width: 726px;
+  }
+}
+
+@include media-mobile {
+  .slider {
+    right: 0;
+
+    margin-bottom: 0;
+  }
+
+  .slider__container {
+    display: none;
+  }
+
+  .slider__images {
+    margin-bottom: 16px;
   }
 }
