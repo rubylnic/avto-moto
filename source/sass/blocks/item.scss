@@ -1,5 +1,6 @@
 .item {
-  width: 999px;
+  width: 100%;
+  max-width: 999px;
   margin-bottom: 89px;
 
   @include flex;
@@ -21,6 +22,7 @@
 
 .item__list {
   width: 86%;
+  max-width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -98,11 +100,12 @@
 }
 
 .item__link {
-  display: block;
+  display: inline-block;
 
-  width: 196px;
+  width: auto;
+  max-width: 290px;
   margin-bottom: 16px;
-  padding: 16.5px 0;
+  padding: 16.5px 20px;
 
   font-size: 14px;
   font-weight: 600;
@@ -122,10 +125,11 @@
 }
 
 .item__credit {
-  display: block;
+  display: inline-block;
 
-  width: 222px;
-  padding: 16.5px 0;
+  width: auto;
+  max-width: 290px;
+  padding: 16.5px 18px;
 
   font-size: 14px;
   font-weight: 600;

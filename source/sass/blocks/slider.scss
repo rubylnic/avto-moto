@@ -41,7 +41,7 @@
       left: 0;
 
       width: 122px;
-      height: 30px;
+      height: 27px;
       padding-top: 5px;
 
       font-size: 10px;
@@ -157,6 +157,8 @@
 
 @include media-mobile {
   .slider {
+    width: auto;
+    overflow: hidden;
     right: 0;
 
     margin-bottom: 0;
@@ -167,6 +169,12 @@
   }
 
   .slider__images {
+    width: 864px;
+    display: flex;
     margin-bottom: 16px;
+  }
+
+  .slider__img--hidden {
+    display: block;
   }
 }

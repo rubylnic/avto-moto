@@ -12,6 +12,11 @@
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -23,8 +28,8 @@
           <use xlink:href="img/sprite_auto.svg#icon-logo" width="134" height="55"></use>
         </svg>
       </div>
-      <button class="header__button" type="button" aria-label="Открыть/закрыть меню"></button>
-      <nav class="main-nav main-nav--closed">
+      <button class="header__button header__button--opened" type="button" aria-label="Открыть/закрыть меню"></button>
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Автомобили</a>
@@ -44,9 +49,9 @@
   </header>
   <main class="main container">
     <section class="item">
-      <div class="slider">
-        <ul class="slider__images">
-          <li class="slider__img slider__img--new">
+      <div class="slider swiper-container">
+        <ul class="slider__images swiper-wrapper">
+          <li class="slider__img slider__img--new swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-1@1x.webp 1x, img/picture-1@2x.webp 2x">
               <source type="image/webp" media="(min-width:768px)" srcset="img/picture-1-t@1x.webp 1x, img/picture-1-t@2x.webp 2x">
@@ -59,24 +64,26 @@
               <img src="img/picture-1-m@1x.jpg" srcset="img/picture-1-m@2x.jpg 2x" width="288" height="180" alt="Автомобиль вид снаружи">
             </picture>
           </li>
-          <li class="slider__img slider__img--hidden">
+          <li class="slider__img slider__img--hidden swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-2@1x.webp 1x, img/picture-2@2x.webp 2x">
               <source type="image/webp" srcset="img/picture-2-t@1x.webp 1x, img/picture-2-t@2x.webp 2x">
                 <!-- 1х: 600px; 2x: 1200px -->
               <source media="(min-width:960px)" srcset="img/picture-2.jpg 1x, img/picture-2@2x.jpg 2x">
                 <!-- 1х: 726px; 2x: 1453px -->
-              <img src="img/picture-2-t@1x.jpg" srcset="img/picture-2-t@2x.jpg 2x" width="726" height="453" alt="Автомобиль вид внутри">
+              <source media="(min-width:768px)" srcset="img/picture-2-t.jpg 1x, img/picture-2-t@2x.jpg 2x">
+                <!-- 1х: 288px; 2x: no -->
+              <img src="img/picture-2-t@1x.jpg" width="288" height="180" alt="Автомобиль вид внутри">
             </picture>
           </li>
-          <li class="slider__img slider__img--hidden">
+          <li class="slider__img slider__img--hidden swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width:960px)" srcset="img/picture-3@1x.webp 1x, img/picture-3@2x.webp 2x">
               <source type="image/webp" srcset="img/picture-3-t@1x.webp 1x, img/picture-3-t@2x.webp 2x">
-                <!-- 1х: 600px; 2x: 1200px -->
-              <source media="(min-width:960px)" srcset="img/picture-3.jpg 1x, img/picture-3@2x.jpg 2x">
                 <!-- 1х: 726px; 2x: 1453px -->
-              <img src="img/picture-3-t@1x.jpg" srcset="img/picture-3-t@2x.jpg 2x" width="726" height="453" alt="Спидометр">
+              <source media="(min-width:768px)" srcset="img/picture-1-t.jpg 1x, img/picture-1-t@2x.jpg 2x">
+                <!-- 1х: 288px; 2x: no -->
+              <img src="img/picture-3-t@1x.jpg" width="288" height="180" alt="Спидометр">
             </picture>
           </li>
         </ul>

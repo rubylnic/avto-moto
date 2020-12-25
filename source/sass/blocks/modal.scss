@@ -124,6 +124,7 @@
 
   color: $black;
   border: rgba(72, 73, 77, 0.2) solid 1px;
+  border-radius: 0;
 
   &::placeholder {
     color: $grey;
@@ -160,6 +161,7 @@
 
   color: $black;
   border: rgba(72, 73, 77, 0.2) solid 1px;
+  border-radius: 0;
 
   resize: none;
 

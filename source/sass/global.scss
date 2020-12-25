@@ -62,6 +62,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.slider .swiper-wrapper {
+  height: auto;
+  margin: 0 0 32px;
+}
+
 @include media-tablet {
   .container {
     padding: 0 19px;
@@ -71,5 +76,14 @@ input[type="radio"].visually-hidden {
 @include media-mobile {
   .container {
     padding: 0 15px;
+  }
+
+  .slider .swiper-wrapper {
+    margin-bottom: 15px;
+    max-width: 600px;
+  }
+
+  .item .swiper-container {
+    max-width: 600px;
   }
 }
